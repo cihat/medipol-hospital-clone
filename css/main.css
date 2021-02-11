@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;700&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css");
+* {
+  text-decoration: none;
+  -webkit-overflow-scrolling: touch; }
+  *:focus {
+    outline: 0; }
+
+html {
+  font-family: "Mulish", sans-serif;
+  font-size: 16px; }
+
+header #navbar {
+  max-width: 80%;
+  margin: 70px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  header #navbar .logo {
+    cursor: pointer; }
+    header #navbar .logo img {
+      width: 246px;
+      height: 41px; }
+  header #navbar .right-buttons ul {
+    display: flex; }
+    header #navbar .right-buttons ul li {
+      margin-left: 40px; }
+      header #navbar .right-buttons ul li a {
+        font-weight: 400;
+        color: rgba(31, 21, 52, 0.5); }
+        header #navbar .right-buttons ul li a span.home {
+          font-weight: bold;
+          color: #1f1534; }
+
+.element-dot {
+  position: absolute;
+  top: 160px;
+  width: 131.58px;
+  height: 115px;
+  display: inline; }
+
+.section-illustration {
+  display: flex;
+  justify-content: center;
+  max-width: 90%;
+  margin: 0 auto;
+  margin-bottom: 190px;
+  align-items: center; }
+  .section-illustration .header-text {
+    display: flex;
+    flex-direction: column;
+    width: 434px;
+    height: 338px;
+    margin-right: 120px; }
+    .section-illustration .header-text .title {
+      width: 427px;
+      height: 112px;
+      margin-bottom: 24px; }
+      .section-illustration .header-text .title h1 {
+        font-size: 3rem;
+        font-weight: 700;
+        line-height: 56px; }
+    .section-illustration .header-text .paragraf {
+      margin-bottom: 45px; }
+      .section-illustration .header-text .paragraf p {
+        width: 434px;
+        height: 96px;
+        color: #7d7987;
+        font-size: 21px;
+        line-height: 32px; }
+    .section-illustration .header-text .button button {
+      width: 200px;
+      height: 60px;
+      background-color: #458ff6;
+      color: #fff;
+      border-radius: 3rem;
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 60px;
+      border: 0px;
+      cursor: pointer; }
+  .section-illustration .illustration {
+    width: 693px;
+    height: 598px;
+    margin-top: 14px; }
+
+.our-services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 80px; }
+  .our-services h1 {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 56px;
+    margin-bottom: 26px; }
+  .our-services .h-r img {
+    margin-bottom: 33px;
+    width: 56px;
+    height: 2px; }
+  .our-services .our-services-paragraf {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 300;
+    color: #7d7987;
+    width: 952px;
+    height: 60px; }
+
+.services-list {
+  margin: auto;
+  width: 1124px;
+  height: 745px;
+  margin-bottom: 69px; }
+  .services-list .background-photo {
+    position: absolute;
+    z-index: -1;
+    top: 950px;
+    left: 0px; }
+  .services-list ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start; }
+    .services-list ul li {
+      width: 350px;
+      height: 354px;
+      display: flex;
+      flex-direction: column;
+      background: #fff;
+      margin-bottom: 37px;
+      margin-right: 36px;
+      border-radius: 10px; }
+      .services-list ul li:nth-child(3) {
+        margin-right: 0; }
+      .services-list ul li:last-child {
+        margin-right: 0; }
+      .services-list ul li .icon {
+        width: 92px;
+        height: 90px;
+        margin: 54px 221px 23px 37px; }
+      .services-list ul li .title {
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 56px;
+        color: #000;
+        margin: 0 151px 1px 39px; }
+      .services-list ul li .description {
+        font-weight: 300;
+        font-size: 1rem;
+        line-height: 28px;
+        color: #7d7987; }
