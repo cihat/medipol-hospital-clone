@@ -199,6 +199,8 @@ header {
       }
 
       .title {
+        width: 196px;
+        height: 56px;
         font-weight: bold;
         font-size: 24px;
         line-height: 56px;
@@ -211,6 +213,7 @@ header {
         font-size: 1rem;
         line-height: 28px;
         color: #7d7987;
+        padding: 1px 45px 47px 39px;
       }
     }
   }
@@ -254,26 +257,216 @@ header {
   }
 
   .healthcare-text {
+    position: relative;
     width: 486px;
-    height: 388px;
+    height: 398px;
     display: flex;
     flex-direction: column;
 
     .healthcare-title {
-      margin-bottom: 26px;
-      width: 481px;
-      height: 112px;
-      font-weight: 700;
-      line-height: 56px;
-      font-size: 36px;
-      color: #000;
-      float: left;
+      display: flex;
+      justify-content: flex-start;
+      h1 {
+        text-align: left;
+        align-items: right;
+        margin-left: 0;
+        margin-bottom: 26px;
+        width: 481px;
+        height: 112px;
+        font-weight: 700;
+        line-height: 56px;
+        font-size: 36px;
+        color: #000;
+      }
+    }
+
+    .text {
+      width: 450px;
+      height: 120px;
+
+      p {
+        text-align: left;
+        margin-bottom: 37px;
+        color: #7d7987;
+        font-size: 18px;
+        line-height: 30px;
+      }
     }
 
     .button-learn-more {
       #healthcare-button {
-        margin-bottom: 20px;
+        // margin-top: 37px;
+        margin-bottom: 0px;
+        width: 200px;
+        height: 60px;
+        color: #458ff6;
+        background-color: #fff;
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
       }
     }
+  }
+}
+
+.trafalgar-illustration-sec03-1 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 251px;
+
+  .healthcare-text {
+    margin-right: 71px;
+    position: relative;
+    width: 486px;
+    height: 398px;
+    display: flex;
+    flex-direction: column;
+
+    .healthcare-title {
+      display: flex;
+      justify-content: flex-start;
+      h1 {
+        text-align: left;
+        align-items: right;
+        margin-left: 0;
+        margin-bottom: 26px;
+        width: 481px;
+        height: 112px;
+        font-weight: 700;
+        line-height: 56px;
+        font-size: 36px;
+        color: #000;
+      }
+    }
+
+    .text {
+      width: 450px;
+      height: 120px;
+
+      p {
+        text-align: left;
+        margin-bottom: 37px;
+        color: #7d7987;
+        font-size: 18px;
+        line-height: 30px;
+      }
+    }
+
+    .button-learn-more {
+      #healthcare-button {
+        // margin-top: 37px;
+        margin-bottom: 0px;
+        width: 200px;
+        height: 60px;
+        color: #458ff6;
+        background-color: #fff;
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+      }
+    }
+  }
+}
+
+.account-testimonials {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  max-width: 1120px;
+  height: 425px;
+  margin: auto;
+  text-align: center;
+  z-index: 0;
+  margin-bottom: 42px;
+
+  background: linear-gradient(208.18deg, #67c3f3 9.05%, #5a98f2 76.74%);
+  border-radius: 24px;
+
+  span.element-dot-1 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+  }
+  span.element-dot-2 {
+    position: absolute;
+    bottom: 39px;
+    right: 1040px;
+    z-index: -1;
+  }
+
+  h1 {
+    font-size: 36px;
+    line-height: 48px;
+    font-weight: 700;
+    color: white;
+    max-width: 522px;
+    height: 48px;
+    margin: 64px 297px 25px 301px;
+  }
+
+  .account-infos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .account-info-left {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .account-photo {
+        img {
+        }
+      }
+
+      .account-name-rank {
+        margin-left: 29px;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+
+        .name {
+          font-size: 22px;
+          line-height: 48px;
+          font-weight: bold;
+          color: #fff;
+        }
+        .rank {
+          font-size: 18px;
+          line-height: 48px;
+          color: #fff;
+        }
+      }
+    }
+    .account-info-right {
+      .account-comment {
+        width: 420px;
+        height: 120px;
+        margin-left: 110px;
+        color: #fff;
+        font-size: 19px;
+        font-weight: 400;
+        line-height: 30px;
+        text-align: left;
+      }
+    }
+  }
+}
+
+.arrow-nav {
+  width: 336px;
+  height: 20px;
+  margin: auto;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 216px;
+  button {
+    font-style: none;
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
   }
 }
