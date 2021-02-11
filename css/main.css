@@ -148,3 +148,51 @@ header #navbar {
         font-size: 1rem;
         line-height: 28px;
         color: #7d7987; }
+
+.button-learn-more {
+  text-align: center; }
+  .button-learn-more button.learn-more {
+    width: 200px;
+    height: 60px;
+    color: #458ff6;
+    background-color: #fff;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 60px;
+    border-radius: 50px;
+    border: 1px #458ff6 solid;
+    margin-bottom: 220px;
+    cursor: pointer; }
+    .button-learn-more button.learn-more:hover {
+      background-color: #458ff6;
+      color: #fff;
+      transition: 1s, color, backgroun-color; }
+
+.leading-healthcare-providers {
+  width: 1273px;
+  height: 477px;
+  margin: auto auto 229px auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .leading-healthcare-providers .medipol-illustration-sec02-1 {
+    width: 650px;
+    height: 477px;
+    margin-right: 137px; }
+  .leading-healthcare-providers .healthcare-text {
+    width: 486px;
+    height: 388px;
+    display: flex;
+    flex-direction: column; }
+    .leading-healthcare-providers .healthcare-text .healthcare-title {
+      margin-bottom: 26px;
+      width: 481px;
+      height: 112px;
+      font-weight: 700;
+      line-height: 56px;
+      font-size: 36px;
+      color: #000;
+      float: left; }
+    .leading-healthcare-providers .healthcare-text .button-learn-more #healthcare-button {
+      margin-bottom: 20px; }
