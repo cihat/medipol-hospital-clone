@@ -248,7 +248,8 @@ header #navbar {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: auto auto 251px auto; }
+  margin: auto auto 251px auto;
+  text-align: center; }
   .trafalgar-illustration-sec03-1 .healthcare-text {
     margin-right: 71px;
     width: 486px;
