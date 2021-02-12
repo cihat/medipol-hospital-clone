@@ -12,6 +12,9 @@ html {
   width: 100vw;
   height: 100vh; }
   html body {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
     margin: auto;
     text-align: center; }
 
@@ -475,6 +478,7 @@ header #navbar {
       transition: 1s, color; }
 
 footer {
+  width: 100%;
   height: 432px;
   background: linear-gradient(183.41deg, #67c3f3 -8.57%, #5a98f2 82.96%);
   margin: auto;
