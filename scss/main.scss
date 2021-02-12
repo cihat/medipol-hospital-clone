@@ -14,11 +14,18 @@
 html {
   font-family: "Mulish", sans-serif;
   font-size: 16px;
+  width: 100vw;
+  height: 100vh;
+  body {
+    // width: 100vw;
+    margin: auto;
+    text-align: center;
+  }
 }
 
 header {
   #navbar {
-    max-width: 80%;
+    width: 1217px;
     margin: 70px auto;
     display: flex;
     justify-content: space-between;
@@ -42,6 +49,10 @@ header {
           a {
             font-weight: 400;
             color: rgba($color: #1f1534, $alpha: 0.5);
+            &:hover {
+              color: #1f1534;
+              font-weight: bold;
+            }
 
             span.home {
               font-weight: bold;
@@ -67,7 +78,7 @@ header {
 .section-illustration {
   display: flex;
   justify-content: center;
-  max-width: 90%;
+  width: 90%;
   margin: 0 auto;
   margin-bottom: 190px;
 
@@ -84,6 +95,7 @@ header {
       width: 427px;
       height: 112px;
       margin-bottom: 24px;
+      text-align: left;
 
       h1 {
         font-size: 3rem;
@@ -115,6 +127,12 @@ header {
         line-height: 60px;
         border: 0px;
         cursor: pointer;
+        &:hover {
+          background-color: #fff;
+          color: #458ff6;
+          border: 2px #458ff6 solid;
+          transition: 1s, color;
+        }
       }
     }
   }
@@ -206,6 +224,7 @@ header {
         line-height: 56px;
         color: #000;
         margin: 0 151px 1px 39px;
+        text-align: left;
       }
 
       .description {
@@ -214,6 +233,7 @@ header {
         line-height: 28px;
         color: #7d7987;
         padding: 1px 45px 47px 39px;
+        text-align: left;
       }
     }
   }
@@ -316,13 +336,14 @@ header {
 }
 
 .trafalgar-illustration-sec03-1 {
+  width: 1165x;
   display: flex;
   justify-content: center;
-  margin-bottom: 251px;
+  align-items: center;
+  margin: auto auto 251px auto;
 
   .healthcare-text {
     margin-right: 71px;
-    position: relative;
     width: 486px;
     height: 398px;
     display: flex;
@@ -345,6 +366,11 @@ header {
       }
     }
 
+    .h-r-2 {
+      margin-bottom: 31px;
+      text-align: left;
+    }
+
     .text {
       width: 450px;
       height: 120px;
@@ -359,6 +385,8 @@ header {
     }
 
     .button-learn-more {
+      text-align: left;
+      margin-top: 40px;
       #healthcare-button {
         // margin-top: 37px;
         margin-bottom: 0px;
@@ -366,7 +394,6 @@ header {
         height: 60px;
         color: #458ff6;
         background-color: #fff;
-        position: absolute;
         bottom: 0px;
         left: 0px;
         cursor: pointer;
@@ -374,6 +401,12 @@ header {
           background-color: #458ff6;
           color: #fff;
           transition: 1s, color, backgroun-color;
+        }
+        span {
+          margin-left: 14px;
+          img {
+            color: #fff;
+          }
         }
       }
     }
@@ -384,7 +417,7 @@ header {
   display: flex;
   flex-direction: column;
   position: relative;
-  max-width: 1120px;
+  width: 1120px;
   height: 425px;
   margin: auto;
   text-align: center;
@@ -479,7 +512,20 @@ header {
     font-style: none;
     border: none;
     background-color: #fff;
+    display: flex;
     cursor: pointer;
+
+    div {
+      img {
+        margin-right: 18px;
+      }
+    }
+    div:last-child {
+      img {
+        margin-right: 0;
+      }
+    }
+
     &:hover {
       opacity: 0.8;
     }
@@ -487,20 +533,29 @@ header {
 }
 
 .our-lates-article {
-  margin: 191px auto auto auto;
+  margin: 191px auto 129px auto;
   width: 1220px;
-  height: 502px;
+  height: 810px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: relative;
+  z-index: 1;
 
-  .element-dot {
-    position: absolute;
-    z-index: -1;
-    top: 300px;
-    left: 0;
+  // .element-dot2 {
+  //   position: absolute;
+  //   // z-index: -1;
+  //   img {
+  //     top: 20px;
+  //     left: 10px;
+  //   }
+  // }
+  .background-photo2 {
+    img {
+      position: absolute;
+      z-index: -1;
+      right: 0;
+    }
   }
 
   .lates-article {
@@ -520,23 +575,188 @@ header {
     ul {
       display: flex;
       justify-content: center;
+      box-sizing: border-box;
+      flex-wrap: wrap;
+      margin-bottom: 69px;
+
       li {
         margin-right: 34px;
         width: 350px;
         height: 512px;
         flex-direction: column;
-        border-radius: 20px;
+        border-radius: 18px;
+        background-color: #fff;
 
         .article-image {
           img {
             width: 350px;
             height: 240px;
             margin-bottom: 24px;
+            border-top-left-radius: 18px;
+            border-top-right-radius: 18px;
+          }
+        }
+
+        .article-title {
+          h1 {
+            font-weight: 700;
+            font-size: 21px;
+            line-height: 32px;
+            text-align: left;
+            padding: 0px 66px 12px 33px;
+          }
+        }
+
+        .article-description {
+          p {
+            font-size: 1rem;
+            line-height: 28px;
+            font-weight: 300;
+            color: #7d7987;
+            margin: 0px 51px 25px 33px;
+            text-align: left;
           }
         }
 
         &:nth-last-child() {
           margin-right: 0;
+        }
+
+        .read-more-button {
+          // padding: 11px 0 0 8px;
+          margin: 0px 51px 35px 30px;
+          button {
+            background-color: inherit;
+            border: none;
+            display: flex;
+            cursor: pointer;
+            justify-content: center;
+            align-items: center;
+
+            p {
+              color: #4089ed;
+              font-size: 17px;
+              line-height: 28px;
+              font-weight: 600;
+              margin-right: 15px;
+            }
+            img {
+              width: 14.14px;
+              height: 9px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .view-all-button {
+    button.view-all {
+      width: 200px;
+      height: 60px;
+      color: #458ff6;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 60px;
+      border-radius: 60px;
+      border: 2px #458ff6 solid;
+      &:hover {
+        background-color: #458ff6;
+        color: #fff;
+        border: 2px #fff solid;
+        transition: 1s, color;
+      }
+    }
+  }
+}
+
+footer {
+  // width: 100%;
+  height: 432px;
+  // width: 100vw;
+  background: linear-gradient(183.41deg, #67c3f3 -8.57%, #5a98f2 82.96%);
+  margin: auto;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  .medipol-hospital {
+    width: 391px;
+    height: 201px;
+    display: flex;
+    flex-direction: column;
+    margin: 118px 145px 113px 190px;
+    align-items: flex-start;
+
+    .title {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 17px;
+
+      .icon {
+        img {
+          margin-right: 12px;
+          width: 41px;
+          height: 41px;
+        }
+      }
+      h1 {
+        color: #fff;
+        font-size: 24px;
+        line-height: 30px;
+        font-weight: bold;
+      }
+    }
+
+    .description {
+      p {
+        font-size: 18px;
+        line-height: 28px;
+        color: #fff;
+        margin-bottom: 31px;
+        text-align: left;
+      }
+    }
+
+    .info {
+      width: 391px;
+      height: 28px;
+      margin: 0 0px;
+      p {
+        color: #fff;
+        text-align: left;
+      }
+    }
+  }
+
+  .company-info,
+  .region,
+  .help {
+    display: flex;
+    flex-direction: column;
+    margin-right: 100px;
+    align-items: flex-start;
+    .title {
+      font-weight: bold;
+      line-height: 60px;
+      font-size: 20px;
+      color: #fff;
+      padding-left: 0;
+    }
+
+    ul {
+      li {
+        a {
+          right: 0;
+          font-weight: 300;
+          font-size: 18px;
+          line-height: 38px;
+          color: #fff;
+          float: left;
+          border: none;
+          cursor: pointer;
         }
       }
     }
