@@ -220,7 +220,12 @@ header #navbar {
       background-color: #fff;
       position: absolute;
       bottom: 0px;
-      left: 0px; }
+      left: 0px;
+      cursor: pointer; }
+      .leading-healthcare-providers .healthcare-text .button-learn-more #healthcare-button:hover {
+        background-color: #458ff6;
+        color: #fff;
+        transition: 1s, color, backgroun-color; }
 
 .trafalgar-illustration-sec03-1 {
   display: flex;
@@ -264,7 +269,12 @@ header #navbar {
       background-color: #fff;
       position: absolute;
       bottom: 0px;
-      left: 0px; }
+      left: 0px;
+      cursor: pointer; }
+      .trafalgar-illustration-sec03-1 .healthcare-text .button-learn-more #healthcare-button:hover {
+        background-color: #458ff6;
+        color: #fff;
+        transition: 1s, color, backgroun-color; }
 
 .account-testimonials {
   display: flex;
@@ -342,3 +352,42 @@ header #navbar {
     border: none;
     background-color: #fff;
     cursor: pointer; }
+    .arrow-nav button:hover {
+      opacity: 0.8; }
+
+.our-lates-article {
+  margin: 191px auto auto auto;
+  width: 1220px;
+  height: 502px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative; }
+  .our-lates-article .element-dot {
+    position: absolute;
+    z-index: -1;
+    top: 300px;
+    left: 0; }
+  .our-lates-article .lates-article h1 {
+    margin-bottom: 26px;
+    font-size: 36px;
+    line-height: 56px;
+    font-weight: 700; }
+  .our-lates-article .h-r {
+    margin-bottom: 79px; }
+  .our-lates-article .articles ul {
+    display: flex;
+    justify-content: center; }
+    .our-lates-article .articles ul li {
+      margin-right: 34px;
+      width: 350px;
+      height: 512px;
+      flex-direction: column;
+      border-radius: 20px; }
+      .our-lates-article .articles ul li .article-image img {
+        width: 350px;
+        height: 240px;
+        margin-bottom: 24px; }
+      .our-lates-article .articles ul li:nth-last-child() {
+        margin-right: 0; }
